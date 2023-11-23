@@ -12,11 +12,13 @@
     <!-- хедер -->
     <header class="header">
 
+        <div class="header__main">
             <img class="header__logo" src="asset/small-logo.svg" alt="logo">
 
             <button class="header__button">ПЕРЕЗВОНИТЕ МНЕ</button>
 
             <img class="header__phone" src="asset/phone.svg" alt="phone">
+        </div>
 
             <img class="header__burger" src="asset/v.svg" alt="menu">
     </header>
@@ -25,8 +27,8 @@
     <div class="contacts">
         <h1 class="contacts__title">КОНТАКТЫ</h1>
 
+        <h3 class="contacts__office__title">Центральный офис</h3>
         <div class="contacts__office">
-            <h3 class="contacts__office__title">Центральный офис</h3>
             <p class="contacts__office__address">Тюмень, ул.Червишевский тракт д.37, 3 этаж, оф.313</p>
             <p class="contacts__office__mode">Пн-Пт 8:00 до 17:00</p>
             <p class="contacts__office__weekend">Сб-Вс Выходной</p>
@@ -41,7 +43,7 @@
         <div class="contacts__production">
             <h3 class="contacts__production__title">Производство</h3>
             <p class="contacts__production__mode">Пн-Пт 8:00 до 22:00</p>
-            <p class="contacts__production__phone">+7 (3452) 500-401</p>
+            <p class="contacts__production__phone"><a class="contacts__production__phone__link">+7 (3452) 500-401</a></p>
         </div>
     </div>
 
@@ -54,31 +56,41 @@
 
             <div class="employees__office__worker">
                 <img class="employees__office__worker__img" src="asset/man.jpeg" alt="">
-                <h3 class="employees__office_worker__name">Маркин Эдуард</h3>
-                <p class="employees__office_worker__description">Генеральный директор</p>
+                <div class="employees__office__worker__info">
+                    <h3 class="employees__office_worker__name">Маркин Эдуард</h3>
+                    <p class="employees__office_worker__description">Генеральный директор</p>
+                </div>
             </div>
 
             <div class="employees__office__worker">
                 <img class="employees__office__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__office_worker__name">Человечкова Ирина</h3>
-                <p class="employees__office_worker__description">Главный бухгалтер</p> </div>
+                <div class="employees__office__worker__info">
+                    <h3 class="employees__office_worker__name">Человечкова Ирина</h3>
+                    <p class="employees__office_worker__description">Главный бухгалтер</p> </div>
+                </div>
             
             <div class="employees__office__worker">
                 <img class="employees__office__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__office_worker__name">Сычева Анастасия</h3>
-                <p class="employees__office_worker__description">Бухгалтер</p>
+                <div class="employees__office__worker__info">
+                    <h3 class="employees__office_worker__name">Сычева Анастасия</h3>
+                    <p class="employees__office_worker__description">Бухгалтер</p>
+                </div>
             </div>
 
             <div class="employees__office__worker">
                 <img class="employees__office__worker__img" src="asset/man.jpeg" alt="">
-                <h3 class="employees__office_worker__name">Салмин Николай</h3>
-                <p class="employees__office_worker__description">Менеджер</p>
+                <div class="employees__office__worker__info">
+                    <h3 class="employees__office_worker__name">Салмин Николай</h3>
+                    <p class="employees__office_worker__description">Менеджер</p>
+                </div>
             </div>
 
             <div class="employees__office__worker">
                 <img class="employees__office__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__office_worker__name">Алексеева Ирина</h3>
-                <p class="employees__office_worker__description">Менеджер</p>
+                <div class="employees__office__worker__info">
+                    <h3 class="employees__office_worker__name">Алексеева Ирина</h3>
+                    <p class="employees__office_worker__description">Менеджер</p>
+                </div>
             </div>
         </div>
         
@@ -88,32 +100,42 @@
 
             <div class="employees__production__worker">
                 <img class="employees__production__worker__img" src="asset/man.jpeg" alt="">
-                <h3 class="employees__production__worker__name">Маркин Эдуард</h3>
-                <div class="employees__production__worker__description">Генеральный директор</div>
+                <div class="employees__production__worker__info">
+                    <h3 class="employees__production__worker__name">Маркин Эдуард</h3>
+                    <div class="employees__production__worker__description">Генеральный директор</div>
+                </div>
             </div>
 
             <div class="employees__production__worker">
                 <img class="employees__production__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__production__worker__name">Человечкова Ирина</h3>
-                <div class="employees__production__worker__description">Главный бухгалтер</div>
+                <div class="employees__production__worker__info">
+                    <h3 class="employees__production__worker__name">Человечкова Ирина</h3>
+                    <div class="employees__production__worker__description">Главный бухгалтер</div>
+                </div>
             </div>
 
             <div class="employees__production__worker">
                 <img class="employees__production__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__production__worker__name">Сычева Анастасия</h3>
-                <div class="employees__production__worker__description">Бухгалтер</div>
+                <div class="employees__production__worker__info">
+                    <h3 class="employees__production__worker__name">Сычева Анастасия</h3>
+                    <div class="employees__production__worker__description">Бухгалтер</div>
+                </div>
             </div>
 
             <div class="employees__production__worker">
                 <img class="employees__production__worker__img" src="asset/man.jpeg" alt="">
-                <h3 class="employees__production__worker__name">Салмин Николай</h3>
-                <div class="employees__production__worker__description">Менеджер</div>
+                <div class="employees__production__worker__info">
+                    <h3 class="employees__production__worker__name">Салмин Николай</h3>
+                    <div class="employees__production__worker__description">Менеджер</div>
+                </div>
             </div>
 
             <div class="employees__production__worker">
                 <img class="employees__production__worker__img" src="asset/woman.jpeg" alt="">
-                <h3 class="employees__production__worker__name">Алексеева Ирина</h3>
-                <div class="employees__production__worker__description">Менеджер</div>
+                <div class="employees__production__worker__info">
+                    <h3 class="employees__production__worker__name">Алексеева Ирина</h3>
+                    <div class="employees__production__worker__description">Менеджер</div>
+                </div>
             </div>
         </div>
     </div>
@@ -144,7 +166,7 @@
         <!-- Контакты -->
         <div class="footer__contacts">
             <div class="footer__contacts__phone"><a class="footer__contacts__phone__link">+7 (3452) 500-301</a></div>
-            <div class="footer__contacts__mail">Eurobeton72@mail.ru</div>
+            <div class="footer__contacts__mail"><a class="footer__contacts__mail__link">Eurobeton72@mail.ru</a></div>
             <p class="footer__contacts__address">© Евробетон, 2022. г. Тюмень, ул.Червишевский тракт, д.37, 3 этаж</p>
         </div>
 
