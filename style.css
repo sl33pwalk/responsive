@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'RF Dewi Expanded'; /*a name to be used later*/
+    src: url('asset/fonts/RF_Devi/RFDewiExpanded-Regular.ttf/')
+}
+
+.body {
+    width: 390px;
+}
+
+img {
+    width:10px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: antiquewhite;
+    /* background: var(--White, #FFF); */
+}
+.header__logo{
+    width: 10%;
+    height: 10%;
+}
+.header__button{
+    display: flex;
+    padding: 10px 8px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--Black, #000);
+}
+.header__phone{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--Red, #E63E35);
+}
+.header__burger{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 2px solid var(--Grey, #B8B8B8);
+}
+.contacts{
+    display: flex;
+    width: 390px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background: var(--Light-black, #161515);
+}
+.contacts__title{
+    display: flex;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+
+    color: var(--Light-Gray, #FBFBFB);
+
+    /* H1/390 */
+    font-family: RF Dewi Expanded;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 40.8px */
+    text-transform: uppercase;
+}
+.contacts__office{
+
+}
+.contacts__office__title{
+
+}
+.contacts__office__address{
+
+}
+.contacts__office__mode{
+
+}
+.contacts__office__weekend{
+
+}
+.contacts__office__phone{
+
+}
+.contacts__office__phone__link{
+
+}
+.contacts__office__mail{
+
+}
+.contacts__office__mail__link{
+
+}
+.contacts__office__social{
+
+}
+.contacts__office__instagram{
+
+}
+.contacts__office__vk{
+
+}
+.contacts__production{
+
+}
+.contacts__production__title{
+
+}
+.contacts__production__mode{
+
+}
+.contacts__production__phone{
+
+}
+.employees{
+
+}
+.employees__office{
+
+}
+.employees__office__title{
+
+}
+.employees__office__worker{
+
+}
+.employees__office__worker__img{
+
+}
+.employees__office_worker__name{
+
+}
+.employees__office_worker__description{
+
+}
+.employees__production{
+
+}
+.employees__production__title{
+
+}
+.employees__production__worker{
+
+}
+.employees__production__worker__img{
+
+}
+.employees__production__worker__name{
+
+}
+.employees__production__worker__description{
+
+}
+.description{
+
+}
+.description__annotation{
+
+}
+.description__title{
+
+}
+.description__main{
+
+}
+.footer{
+
+}
+.footer__form{
+
+}
+.footer__title{
+
+}
+.footer__description{
+
+}
+.footer__form__input__name{
+
+}
+.footer__form__input__phone{
+
+}
+.footer__form__input__comment{
+
+}
+.footer__form__input__submit{
+
+}
+.footer__form__warning{
+
+}
+.footer__form__warning__link{
+
+}
+.footer__contacts{
+
+}
+.footer__contacts__phone{
+
+}
+.footer__contacts__phone__link{
+
+}
+.footer__contacts__mail{
+
+}
+.footer__contacts__address{
+
+}
