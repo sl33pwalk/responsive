@@ -7,20 +7,14 @@
     src: url('asset/fonts/RFDewi-Regular.ttf')
 }
 
-img {
-    width: 50px;
-}
-
-
 body {
-    font-family: 'RF Dewi', Arial, sans-serif;
-    overflow: scroll;
-
+    font-family: 'RF Dewi';
 }
 
 body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .footer__title, .contacts__title,
@@ -28,6 +22,11 @@ body, html {
   .employees__office__title,
    .employees__production__title, .header__button  {
     font-family: 'RF Dewi Extended';
+    font-weight: bold;
+}
+
+.contacts__office__title {
+    font-family: 'RF Dewi';
     font-weight: bold;
 }
 
@@ -39,6 +38,7 @@ body, html {
     width: 100%;
     top: 0;
     z-index: 1000; 
+
 }
 
 .header__main {
@@ -47,7 +47,7 @@ body, html {
     align-items: center;
 }
 
-.header__logo {
+.header__logo__img {
     max-width: 100%;
     width: 34px;
     height: 34px;
@@ -81,6 +81,14 @@ body, html {
     border: 2px solid var(--Grey, #B8B8B8);
 }
 
+.header__full__phone {
+    display: none;
+}
+
+.header__nav {
+    display: none;
+}
+
 .contacts {
     background: var(--Light-black, #161515);
     padding: 15px;
@@ -96,7 +104,7 @@ body, html {
     font-size: 34px;
     font-style: normal;
     font-weight: 800;
-    line-height: 120%; /* 40.8px */
+    line-height: 120%;
     text-transform: uppercase;
 }
 
@@ -105,7 +113,7 @@ body, html {
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 120%; /* 21.6px */
+    line-height: 120%; 
 }
 
 .contacts__office, .contacts__production {
@@ -120,35 +128,23 @@ body, html {
     text-decoration-line: underline;
  }
 
-/* Добавление стилей для планшетов и более крупных экранов */
-
-@media (min-width: 768px) {
-    .header {
-        padding: 20px;
-    }
-
-    .header__logo {
-        max-width: 80%;
-    }
-
-    .contacts__title {
-        font-size: 2em;
-    }
+.contacts__office__social {
+    display: flex;
+    gap: 2%;
 }
 
-/* Добавление стилей для десктопов */
+/* .contacts__office__social__svg {
+    transition: 300ms;
 
-@media (min-width: 1200px) {
-    .header__button {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
+} */
 
-    .contacts__title {
-        font-size: 2.5em;
-    }
+.social:hover {
+    fill: var(--Red);
 }
 
+/* svg:hover {
+    fill: red;
+  } */
 
 .employees {
     display: flex;
@@ -167,7 +163,7 @@ body, html {
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     text-transform: uppercase;
 }
 .employees__office__worker, .employees__production__worker{
@@ -180,6 +176,7 @@ body, html {
 .employees__office__worker__img, .employees__production__worker__img{
     width: 150px;
     height: 200px;
+    
 }
 
 .employees__office__worker__info, .employees__production__worker__info {
@@ -198,7 +195,7 @@ body, html {
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 120%; /* 21.6px */
+    line-height: 120%;
 
 }
 .employees__office_worker__description, .employees__production__worker__description{
@@ -218,7 +215,7 @@ body, html {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     padding: 1px 15px;
 }
 
@@ -228,7 +225,7 @@ body, html {
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 120%; /* 21.6px */
+    line-height: 120%;
     padding: 0px 15px;
 }
 
@@ -241,6 +238,11 @@ body, html {
 
 .footer__title, .footer__description {
     color: #fff;
+    font-family: 'RF Dewi Expanded';
+}
+
+.footer__description {
+    font-family: 'RF Dewi';
 }
 
 .footer__contacts {
@@ -254,7 +256,7 @@ body, html {
  .footer__form__input__comment {
     border: 2px solid var(--Grey, #B8B8B8);
     background: var(--White, #FFF);
-    width: 99%;
+    width: 100%;
     display: flex;
 
     flex-direction: column;
@@ -265,7 +267,7 @@ body, html {
 
  .footer__form__input__submit {
     display: flex;
-    padding: 10px 8px;
+    padding: 7px 0px;
     justify-content: center;
     align-items: center;
     align-self: stretch;
@@ -274,7 +276,7 @@ body, html {
     color: #fff;
     font-family: 'RF Dewi';
     font-weight: bold;
-    width: 100%;
+    width: 102%;
  }
 
 .footer__form__warning {
@@ -301,7 +303,7 @@ body, html {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 
     padding: 10px;
 }
@@ -315,13 +317,266 @@ body, html {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 }
 
 .footer__logo {
     width: 10%;
     height: 10%;
     transform: scaleX(-1); /* Перевернуть по горизонтали */
-    opacity: 0.8; /* Прозрачность (от 0 до 1) */
+    opacity: 0.8;
 }
 
+
+
+.header__company {
+    display: none;
+}
+
+@media screen and (min-width: 757px) {
+    .footer__form__input__submit {
+        width: 101%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer__form__input__submit, .footer__form__input__name, 
+    .footer__form__input__phone,
+    .footer__form__input__comment {
+        width: 99%;
+    }
+
+    .footer__form__input__submit {
+        width: 100%;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;;
+        position: static;
+        width: 100%;
+    }
+
+    .header__nav {
+        display: flex;
+        background: var(--Light-black, #161515);
+        color: #E63E35;
+        align-items: end;
+        justify-content: end;
+        gap: 8%;
+        padding: 2% 10%;
+    }
+
+      
+
+    .header__nav__button {
+        box-sizing: border-box;
+        background: #161515;
+        color: #B8B8B8;
+        padding: 1% 1%;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid var(--Black, #161515);
+
+    }
+
+    .header__main {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header__logo__img {
+        height: 50px;
+    }
+
+    .header__logo__company {
+        display: flex;
+        color: #2C2B2E;
+
+        font-family: RF Dewi Expanded;
+        font-size: 31.197px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 120%; /* 37.436px */
+        text-transform: uppercase;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__full__phone {
+        display: flex;
+        flex-direction: column;
+        color: #000;
+    }
+
+    .header__full__phone__number {
+        color: var(--Red, #E63E35);
+        text-align: right;
+        font-family: RF Dewi Expanded;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.036px;
+    }
+
+    .header__full__phone__description {
+        color: var(--Black, #000);
+        text-align: right;
+        font-family: RF Dewi;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .body {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .contacts {
+        /* margin-top: 100px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0px;
+        padding-left: 20px;
+        height: 993px;
+    }
+
+    .contacts__title {
+        width: 50%;
+    }
+
+    .contacts__office, .contacts__office__title {
+        width: 50%;
+    }
+
+    .contacts__production {
+        width: 50%;
+    }
+
+
+    .employees {
+        /* margin-top: 100px; */
+        flex: 2;
+        height: 960px;
+        overflow: scroll;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .employees__office, .employees__production {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .employees__office__title, .employees__production__title {
+        /* display: block; */
+        width: 100%;
+    }
+
+    .employees__office__worker__img, .employees__production__worker__img {
+        width: 50%;
+    }
+
+    .employees__office__worker__info, .employees__production__worker__info {
+        width: 100%;
+        padding: 10px;
+        margin-right: 50px;
+    }
+
+    .employees__office_worker__name, .employees__production__worker__name {
+        width: 150px;
+    }
+
+    .employees__office_worker__description, .employees__production__worker__description {
+        width: 190px;
+    }
+
+    .description {
+        padding: 200px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__form {
+        padding: 100px 160px;
+        width: 50%;
+    }
+
+    .footer__form__logic {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+        grid-gap:20px;
+
+    }
+
+    .footer__form__input__name, 
+     .footer__form__input__phone,
+      .footer__form__input__comment {
+        flex: 1 300px;
+        padding: 20px;
+    }
+
+    .footer__form__input__submit {
+        /* margin-top: 30px; */
+        padding: 20px;
+    }
+
+    .header__button:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+    .header__nav__button:hover {
+        box-sizing: border-box;
+        border: 1px solid var(--White, #ffffff);
+        color: #fff;
+    }
+
+    .footer__form__input__name:hover, .footer__form__input__phone:hover, .footer__form__input__comment:hover {
+        color: black;
+        border-color: rgb(48, 48, 48);
+    }
+
+    input::-webkit-input-placeholder {
+        color: #999;
+    }
+    input:hover::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    .social:hover {
+        fill: var(--Red);
+    }
+    
+
+}
