@@ -14,6 +14,7 @@ a, .footer__form__input__submit {
     cursor: pointer;
 }
 
+
 textarea {
     resize: vertical;
     min-height: 50px !important;
@@ -21,7 +22,10 @@ textarea {
 
 .header__logo:active,
 .header__logo:hover,
-.header__logo {
+.header__logo, 
+.header__full__phone:active,
+.header__full__phone:hover,
+.header__full__phone {
   text-decoration: none;
 }
 
@@ -394,14 +398,20 @@ textarea {
     gap: 15px;
 }
 
-.footer__contacts__phone, .footer__contacts__mail {
+
+.footer__contacts a {
+    text-decoration: none;
     color: var(--Red, #E63E35);
+}
+
+.footer__contacts__phone, .footer__contacts__mail {
     text-align: right;
     font-family: 'RF Dewi';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    text-decoration-line: none;
 }
 
 .footer__contacts__address {
@@ -491,6 +501,7 @@ textarea {
         font-weight: 900;
         line-height: normal;
         letter-spacing: 0.036px;
+        transition: 300ms;
     }
 
     .header__full__phone__description {
@@ -711,4 +722,8 @@ textarea {
     .button__call-me:hover {
         background-color: var(--Red) !important;
         border: 2px solid var(--Red);
+    }
+
+    .header__full__phone__number:hover {
+        color: var(--Light-black);
     }

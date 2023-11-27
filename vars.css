@@ -3,18 +3,21 @@
     src: local("RF Dewi Expanded Black"), local("RFDewiExpanded-Black"), url("asset/fonts/RFDewiExpanded-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: "RF Dewi";
     src: local("RF Dewi Regular"), local("RFDewi-Regular"), url("asset/fonts/RFDewi-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: "RF Dewi";
     src: local("RF Dewi Bold"), local("RFDewi-Bold"), url("asset/fonts/RFDewi-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
   }
 
 :root {

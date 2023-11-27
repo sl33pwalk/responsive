@@ -1,12 +1,13 @@
-const menu = document.getElementsByClassName('menu')[0];
-const btnClose = document.getElementsByClassName('menu__closing')[0];
-const btnBurger = document.getElementsByClassName('header__burger')[0];
+const menu = document.querySelector('.menu');
+const btnClose = document.querySelector('.menu__closing');
+const btnBurger = document.querySelector('.header__burger');
 
 if (menu) {
     menu.style.display = 'none';
 }
 
 document.addEventListener("click", ({target}) => {
+    
     switch (target) {
         case btnClose:
             if (menu) {
